@@ -10,3 +10,4 @@ https://jamesn1307.github.io/my-portfolio/
 see my code at 
 https://github.com/jamesN1307/my-portfolio
 
+<img src="img/Screen-Shot 1.png" width "500"> 
