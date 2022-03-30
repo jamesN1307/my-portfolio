@@ -10,6 +10,7 @@ https://jamesn1307.github.io/my-portfolio/
 see my code at 
 https://github.com/jamesN1307/my-portfolio
 
-![Uploading Screen-Shot 3.png…]()
 <img width="1440" alt="Screen-Shot 2" src="https://user-images.githubusercontent.com/97413286/160911367-fdb413e2-7984-41a5-b441-86e83541caf1.png">
 <img width="1440" alt="Screen-Shot 1" src="https://user-images.githubusercontent.com/97413286/160911379-86e9d10e-a835-4de9-8df0-b7e2733d81b6.png">
+<img width="1440" alt="Screen-Shot 3" src="https://user-images.githubusercontent.com/97413286/160911628-31261f25-fb83-49d3-9518-053812f1b76d.png">
+
