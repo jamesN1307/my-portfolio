@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* header section */
+header{
+    background-image: url("https://images.unsplash.com/photo-1502175353174-a7a70e73b362?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VhdHRsZXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-size:cover;
+	min-height: 250px;
+    padding: 3em;
+}
+header h1{
+    float: left;
+    font-size:60px;
+}
+.top-menu{
+    float:right;
+}
+.top-menu ul li{
+    display: inline block;
+    padding: 15px 15px 0px 15px;
+    list-style-type: disc;
+}
+.top-menu ul li a{
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;	
+}
+.top-menu ul li a:hover {
+	color: #ef664d;
+}
+.top-menu ul li a.active {
+	color: #09fa89;
+	font-weight: 600;
+}
+div ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+.effect a {
+	overflow: hidden;
+}
+
+.effect a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.effect a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect a:hover span,
+.ceffect a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+/* quote of the day section */
+.quote{
+    background-image: url("https://wallpaperaccess.com/full/559793.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+    display: revert;
+    flex-direction: column-reverse;
+}
+.quote h2{
+    text-align:left;
+    width: 50%;
+	clear:right;
+	color: yellow;
+}
+/* about me section */
+.about-section{
+	height:200px;
+}
+.about-header {
+	display: flex;
+	border-style: right;
+}
+.about-section h1 {
+	font-size: 3em;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #2a404e;
+	padding: 25px;
+	width:20%;
+	border-right: 5px solid #42857143;
+}
+.about-img img{
+	border: 2px solid #ef664d;
+	border-radius: 103px;
+	float: right;	
+}
+.about-text {
+	float: left;
+	width: 65%;
+	margin-top:0; 
+}
+.about-text p {
+	font-size: 20px;
+	color: #e63333;
+	line-height: 2em;
+    margin-top:0;
+}
+
+main {
+    background: linear-gradient(162deg, rgb(209, 195, 195) 0%, rgb(218, 183, 213) 17%);
+    padding-bottom: 10px;
+}
+
+.work-header {
+    display: flex;
+    border-style: right solid;
+}
+.work-header h2 {
+    font-size: 3em;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #2a404e;
+	padding: 25px;
+	width:20%;
+	border-right: 5px solid #b637e988;
+}
+aside {
+    width: 100%;
+    margin-left: -14px;
+    position: relative;
+    text-align: center;
+    color: rgb(228, 51, 51);
+    font-size:1rem;
+}
+aside h3 {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  padding: 30px;
+  background: linear-gradient(50deg, rgb(173, 76, 76) 14%, rgb(73, 185, 98) 100%);
+  border-radius: 0 25px 25px 0;
+}
+.first-img h3{
+    position: absolute;
+    padding: 25px;
+    background: linear-gradient(50deg, rgb(41, 138, 202) 14%, rgb(15, 38, 209) 100%);
+    border-radius: 0 25px 25px 0;
+}
+.work-pic {
+    opacity: 0.4;
+    width: 50%;
+    margin: 25px;
+    border-radius: 20px;
+    border: 2px dashed #17ca17;
+    transition: opacity 0.5s ease;
+}
+.f-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+}
+.f-work a{
+    padding: 0;
+}
+.f-work img:hover {
+    opacity: 1;
+    transition: opacity 0.7s ease;
+    cursor: pointer;
+}
+.html-pic{
+    width: 99%;
+    margin-left: 10px;
+}
+.other-pic{
+    height: 200px;
+    width: 95%;
+}
+
+@media (max-width: 1340px) {
+    #about-me, #work, #contact-me {
+           display: block;
+           height: unset;
+    }
+    .about-header, .about-text, .work-header {
+            width: 100%;
+            border-bottom: 5px solid #424642;
+            border-right: none;
+           
+    }
+    .work-header {
+        border-bottom: none;
+    }
+   
+    .about-header h2 {
+      padding-left: 0;
+      text-align: center;
+    }
+    .body {
+       align-items: center;
+       justify-content: space-around;
+    }
+    .body h2 {
+        width: 50%;
+        font-size: 3.5rem;
+        border-radius: 20px;
+    }
+    header h1 {
+        display:block;
+        text-align: center;
+    }
+
+    .f-work, aside {
+        width: 100%;
+        margin: 0;
+    }
+    aside h3, .html-pic h3 {
+        position: static;
+        border-radius: 25px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .html-pic {
+        margin: 5px;
+    }
+    .work-header h2 {
+        padding: 0 0 20px;
+        text-align: center;
+    }
+    .my-info-head {
+        width: 100%;
+        border-top: 5px solid #424642;
+        border-right: none;
+        padding: 20px 0;
+    }
+    .my-info-head h2 {
+        padding: 0;
+        text-align: center;
+    }
+    .small-pic {
+        height:320px;
+    }
+   }
+   
+@media (min-width: 1341px) and (max-width:1632px) {
+    .about-section, .my-info-head, .work-header {
+        width: 18%;
+    }
+    .about-section h1, .my-info-head h2, .work-header h2 {
+        padding: 33px 10px 0;
+    }
+    .html-pic h3 {
+        left: 29px;
+    }
+}
+@media (min-width:1632px) and (max-width:1654px) {
+  
+    .about-section h2, .my-info-head h2, .work-header h2 {
+        padding: 33px 10px 0 93px;
+    }
+    .html-pic h3 {
+        left: 35px;
+    }
+}
+@media (min-width: 1655px) and (max-width:1900px) {
+    .my-info-head {
+        width: 21.3%;
+    }
+    .my-info-head h2 {
+        padding: 33px 0;
+        margin: 0 10px 0 0;
+    }
+}
+@media (max-width:501px) {
+    .body {
+       justify-content: space-between;
+    }
+    .-pic {
+        height: 170px;
+    }
+    .background h2 {
+        width: unset;
+        padding: 10px 25px;
+    }
+    .my-info img {
+        width: 40px;
+        transition: all 1s ease;
+    }
+    .my-info img:hover {
+        width: 50px;
+        transition: all 1s ease;
+    }
+}
