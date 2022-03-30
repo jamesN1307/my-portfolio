@@ -101,8 +101,8 @@ nav a:focus {
     flex-direction: column-reverse;
 }
 .quote h2{
-    text-align:left;
-    width: 50%;
+    text-align:center;
+    width: 25%;
 	clear:right;
 	color: yellow;
 }
@@ -123,11 +123,14 @@ nav a:focus {
 	padding: 25px;
 	width:20%;
 	border-right: 5px solid #42857143;
+    position: relative;
 }
 .about-img img{
 	border: 2px solid #ef664d;
 	border-radius: 103px;
 	float: right;	
+    position: relative;
+    bottom:90px;
 }
 .about-text {
 	float: left;
@@ -149,17 +152,21 @@ main {
 .work-header {
     display: flex;
     border-style: right solid;
+    position: relative;
 }
 .work-header h2 {
     font-size: 3em;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-weight: 400;
-	color: #2a404e;
-	padding: 25px;
-	width:20%;
+	color: #213b4b;
+	padding: 33px;
+	width:15%;
 	border-right: 5px solid #b637e988;
+    margin-top: 50px;
+    margin-right: 28px;
 }
+
 aside {
     width: 100%;
     margin-left: -14px;
@@ -178,26 +185,28 @@ aside h3 {
 }
 .first-img h3{
     position: absolute;
+    top: 1372px;
     padding: 25px;
     background: linear-gradient(50deg, rgb(41, 138, 202) 14%, rgb(15, 38, 209) 100%);
     border-radius: 0 25px 25px 0;
 }
 .work-pic {
-    opacity: 0.4;
+    border: 2px dashed #17ca17;
+    opacity: 0.32;
     width: 50%;
     margin: 25px;
     border-radius: 20px;
-    border: 2px dashed #17ca17;
     transition: opacity 0.5s ease;
 }
 .f-work{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 75%;
+    flex-direction:column-reverse;
+    justify-items: center;
+    width: 95%;
 }
-.f-work a{
-    padding: 0;
+.mid{
+    display: flex;
+    flex-grow: row-reverse;
 }
 .f-work img:hover {
     opacity: 1;
@@ -205,90 +214,14 @@ aside h3 {
     cursor: pointer;
 }
 .html-pic{
-    width: 99%;
+    width: 85%;
     margin-left: 10px;
 }
 .other-pic{
-    height: 200px;
-    width: 95%;
+    height: 400px;
+    width: 85%;
 }
 
-@media (max-width: 1340px) {
-    #about-me, #work, #contact-me {
-           display: block;
-           height: unset;
-    }
-    .about-header, .about-text, .work-header {
-            width: 100%;
-            border-bottom: 5px solid #424642;
-            border-right: none;
-           
-    }
-    .work-header {
-        border-bottom: none;
-    }
-   
-    .about-header h2 {
-      padding-left: 0;
-      text-align: center;
-    }
-    .body {
-       align-items: center;
-       justify-content: space-around;
-    }
-    .body h2 {
-        width: 50%;
-        font-size: 3.5rem;
-        border-radius: 20px;
-    }
-    header h1 {
-        display:block;
-        text-align: center;
-    }
-
-    .f-work, aside {
-        width: 100%;
-        margin: 0;
-    }
-    aside h3, .html-pic h3 {
-        position: static;
-        border-radius: 25px;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .html-pic {
-        margin: 5px;
-    }
-    .work-header h2 {
-        padding: 0 0 20px;
-        text-align: center;
-    }
-    .my-info-head {
-        width: 100%;
-        border-top: 5px solid #424642;
-        border-right: none;
-        padding: 20px 0;
-    }
-    .my-info-head h2 {
-        padding: 0;
-        text-align: center;
-    }
-    .small-pic {
-        height:320px;
-    }
-   }
-   
-@media (min-width: 1341px) and (max-width:1632px) {
-    .about-section, .my-info-head, .work-header {
-        width: 18%;
-    }
-    .about-section h1, .my-info-head h2, .work-header h2 {
-        padding: 33px 10px 0;
-    }
-    .html-pic h3 {
-        left: 29px;
-    }
-}
 @media (min-width:1632px) and (max-width:1654px) {
   
     .about-section h2, .my-info-head h2, .work-header h2 {
